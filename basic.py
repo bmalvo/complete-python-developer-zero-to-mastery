@@ -11,20 +11,25 @@
 
 # int & float
 
+# print(2 + 2)
+# print(2 - 2)
+# print(2 * 2)
+# print(2 / 2)
+# print(2 ** 2)
+# print(13//4)
+# print(13 % 4)
+# print('rounded:', round(3.1))
 
+# print(type(-3))
+# print(type(1.2))
+# print(type(None))
 
-print(2 + 2)
-print(2 - 2)
-print(2 * 2)
-print(2 / 2)
-print(2 ** 2)
-print(13//4)
-print(13 % 4)
-print('rounded:', round(3.1))
+# operator precedences
 
-print(type(-3))
-print(type(1.2))
-print(type(None))
+#  ()
+#  **
+# * /
+# + -
 
 # bool
 # str
