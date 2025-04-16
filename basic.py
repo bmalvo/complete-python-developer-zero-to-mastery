@@ -41,15 +41,37 @@
 #  letters, numbers, underscores, case sensetive
 # don't overwrite keywords
 
-iq = 190
-iq_user = 230
-_user = 10
-a, b, c = 1, 2, 3
+# iq = 190
+# iq_user = 230
+# _user = 10
+# a, b, c = 1, 2, 3
 
-print(sum((iq, iq_user, _user)))
+# print(sum((iq, iq_user, _user)))
 
 # bool
+
 # str
+
+quote_string = 'hello, world!'
+double_quote_string = "hello, world!"
+long_string = """ this is ...
+
+... for couple lines long strings 
+
+
+"""
+# print(long_string)
+
+user_name = 'John Doe'
+user_age = 41
+user_occupation = 'dron operator'
+
+# using f-string formating
+print(f'{user_name} is {user_age} old, and he is a {user_occupation}. Awesome!')
+# string indexing
+print(user_name[5:])
+print(user_name[::-1])
+
 # list
 # tuple
 # set
