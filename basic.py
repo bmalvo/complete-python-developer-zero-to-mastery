@@ -50,27 +50,36 @@
 
 # bool
 
+true = True
+false = False
+
+print(true, false)
+print(bool(1))
+print(bool(0))
+print(bool(None))
+print(bool([]))
+
 # str
 
-quote_string = 'hello, world!'
-double_quote_string = "hello, world!"
-long_string = """ this is ...
+# quote_string = 'hello, world!'
+# double_quote_string = "hello, world!"
+# long_string = """ this is ...
 
-... for couple lines long strings 
+# ... for couple lines long strings 
 
 
-"""
+# """
 # print(long_string)
 
-user_name = 'John Doe'
-user_age = 41
-user_occupation = 'dron operator'
+# user_name = 'John Doe'
+# user_age = 41
+# user_occupation = 'dron operator'
 
 # using f-string formating
-print(f'{user_name} is {user_age} old, and he is a {user_occupation}. Awesome!')
+# print(f'{user_name} is {user_age} old, and he is a {user_occupation}. Awesome!')
 # string indexing
-print(user_name[5:])
-print(user_name[::-1])
+# print(user_name[5:])
+# print(user_name[::-1])
 
 # list
 # tuple
