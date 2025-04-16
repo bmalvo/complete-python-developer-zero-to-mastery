@@ -45,3 +45,8 @@ print(9 if 2 in basket else 'nope')
 not_sorted = ['b', 'e', 'y', 'x', 'm', 'a']
 not_sorted.sort(reverse=True)
 print(not_sorted)
+
+print(list(range(100)))
+
+strings_list = ['my', 'name', 'is', 'brydzia']
+print('-'.join(strings_list))
