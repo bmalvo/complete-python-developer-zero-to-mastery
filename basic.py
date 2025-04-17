@@ -50,14 +50,14 @@
 
 # bool
 
-true = True
-false = False
+# true = True
+# false = False
 
-print(true, false)
-print(bool(1))
-print(bool(0))
-print(bool(None))
-print(bool([]))
+# print(true, false)
+# print(bool(1))
+# print(bool(0))
+# print(bool(None))
+# print(bool([]))
 
 # str
 
@@ -88,3 +88,23 @@ print(bool([]))
 # classes
 # specilized data types (modules)
 #  None 
+
+# logical operator
+
+is_magician = False
+is_expert = False
+
+# check if magician AND expert:"You are a master magician"
+
+# check if magician but not expert: "at least you're getting there"
+
+# if you're not a magician "You need magic powers"
+
+if is_magician & is_expert:
+    res = 'You are a master magician'
+elif is_magician | is_expert:
+    res = 'at least you\'re getting there'
+else:
+    res = 'You need magic powers'
+
+print(res)
