@@ -13,4 +13,4 @@ for row in picture:
             print('*', end='')
         else:
             print(' ', end='')
-    print('')
+    print('') 
