@@ -20,8 +20,20 @@
 
 # while loop
 
+# i = 0
+
+# while i < 10:
+#     print(i)
+#     i += 1
+print('test')
+
+my_list = [1,2,3,'something',4,5,6]
+
 i = 0
 
-while i < 10:
-    print(i)
+while i < len(my_list):
+    if type(my_list[i]) == str:
+        i += 1
+        continue
+    print(my_list[i])
     i += 1
