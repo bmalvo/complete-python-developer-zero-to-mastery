@@ -1,5 +1,6 @@
 # OOP
 # Encapsulation is bundling data and the methods that operate on that data within a single unit, often a class, and restricting direct access to some of the object's components.
+# Abstraction focuses on showing only essential information and hiding complex implementation details.
 
 class player_character:
     def __init__(self, name='unknown', age=0):
