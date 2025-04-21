@@ -8,9 +8,14 @@ class player_character:
     def run(self):
         print('run')
 
+    def shout(self):
+        print(f'My name is {self.name}')
+
 
 player1 = player_character('Stefka', 15)
 player2 = player_character('Brydzia', 14)
 
-print(player1.name, player1.age)
-print(player2.name, player2.age)
+# print(player1.name, player1.age)
+# print(player2.name, player2.age)
+
+player1.shout()
