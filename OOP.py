@@ -1,7 +1,17 @@
 # OOP
-# Encapsulation is bundling data and the methods that operate on that data within a single unit, often a class, and restricting direct access to some of the object's components.
-# Abstraction focuses on showing only essential information and hiding complex implementation details.
-# Inheritance allows a new class to inherit properties and behaviors from an existing class, establishing a relationship between them.
+
+# Encapsulation is bundling data and the methods that operate on that data 
+# within a single unit, often a class, and restricting direct access to some 
+# of the object's components.
+
+# Abstraction focuses on showing only essential information and hiding complex 
+# implementation details.
+
+# Inheritance allows a new class to inherit properties and behaviors from an 
+# existing class, establishing a relationship between them.
+
+#  Polymorphism enables objects of different classes to be treated as objects 
+# of a common type, allowing for flexible and reusable code.
 
 # class player_character:
 #     def __init__(self, name='unknown', age=0):
@@ -57,6 +67,11 @@ class Archer(User):
 
 wizard1 = Wizard('Marlin', 50)
 archer1 = Archer('Robin', 100)
-wizard1.attack()
-archer1.attack()
-archer1.attack()
+# wizard1.attack()
+# archer1.attack()
+# archer1.attack()
+
+def player_attack(character):
+    character.attack()
+
+player_attack(archer1)
