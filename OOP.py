@@ -44,16 +44,17 @@
 # print(player4.name, player4.age)
 
 class User(object):
-    def __init__(self, email):
+    def __init__(self,name, email='brak'):
         self.email = email
+        self.name = name
 
     def sing_in(self):
         print('logged in')
 
 class Wizard(User):
     def __init__(self, name, power, email):
-        super().__init__(email)
-        self.name = name
+        super().__init__(name,email)
+        # self.name = name
         self.power = power
 
     def attack(self):
@@ -61,7 +62,8 @@ class Wizard(User):
 
 class Archer(User):
     def __init__(self, name, num_arrows):
-        self.name = name
+        super().__init__(name)
+        # self.name = name
         self.num_arrows = num_arrows
 
     def attack(self):
@@ -72,8 +74,9 @@ class Archer(User):
 wizard1 = Wizard('Marlin', 50, 'wizwiz@hokus.com')
 archer1 = Archer('Robin', 100)
 wizard1.attack()
-print(wizard1.email)
-# archer1.attack()
+print(wizard1.email )
+archer1.attack()
+print(archer1.email)
 # archer1.attack()
 
 # def player_attack(character):
