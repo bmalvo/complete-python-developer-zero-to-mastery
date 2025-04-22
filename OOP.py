@@ -58,7 +58,10 @@ class Wizard(User):
         self.power = power
 
     def attack(self):
-        print(f'attakich with power of {self.power}')
+        print(f'attack with power of {self.power}')
+
+    def __str__(self):
+        print(f'{self.name} has a power: {self.power} and his emial is: {self.email}')
 
 class Archer(User):
     def __init__(self, name, num_arrows):
@@ -78,6 +81,7 @@ print(wizard1.email )
 archer1.attack()
 print(archer1.email)
 # archer1.attack()
+wizard1.__str__()
 
 # def player_attack(character):
 #     character.attack()
