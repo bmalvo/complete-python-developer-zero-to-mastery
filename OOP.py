@@ -76,14 +76,17 @@ class Archer(User):
     
 class HybridBorg(Wizard, Archer):
      def __init__(self, name, power, email, num_arrows):
-        Archer.__init__(self, name, num_arrows)
         Wizard.__init__(self, name, power, email)
+        Archer.__init__(self, name, num_arrows)
 
-hb1 = HybridBorg('borgie', 33, 12, '')
+# hb1 = HybridBorg('borgie', 33, 12, '')
+
+hb1 = HybridBorg(num_arrows=12, email='test', power=33, name='Brydzia')
 print('name: ', hb1.name)
 print('power: ', hb1.power)
 print('email: ', hb1.email)
 print('arrows: ', hb1.num_arrows)
+print(HybridBorg.mro())
     
 
 # wizard1 = Wizard('Marlin', 50, 'wizwiz@hokus.com')
