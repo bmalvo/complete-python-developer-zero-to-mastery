@@ -72,16 +72,28 @@ class Archer(User):
     def attack(self):
         self.num_arrows -= 1
         print(f'attakich with arrows: arrows left- {self.num_arrows}')
+
+    
+class HybridBorg(Wizard, Archer):
+     def __init__(self, name, power, email, num_arrows):
+        Archer.__init__(self, name, num_arrows)
+        Wizard.__init__(self, name, power, email)
+
+hb1 = HybridBorg('borgie', 33, 12, '')
+print('name: ', hb1.name)
+print('power: ', hb1.power)
+print('email: ', hb1.email)
+print('arrows: ', hb1.num_arrows)
     
 
-wizard1 = Wizard('Marlin', 50, 'wizwiz@hokus.com')
-archer1 = Archer('Robin', 100)
-wizard1.attack()
-print(wizard1.email )
-archer1.attack()
-print(archer1.email)
+# wizard1 = Wizard('Marlin', 50, 'wizwiz@hokus.com')
+# archer1 = Archer('Robin', 100)
+# wizard1.attack()
+# print(wizard1.email )
 # archer1.attack()
-wizard1.__str__()
+# print(archer1.email)
+# archer1.attack()
+# wizard1.__str__()
 
 # def player_attack(character):
 #     character.attack()
