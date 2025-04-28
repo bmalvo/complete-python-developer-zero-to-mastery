@@ -1,4 +1,4 @@
-from translate import Translator
+from translate import Translator # type:ignore
 
 translator = Translator(to_lang='ja')
 
